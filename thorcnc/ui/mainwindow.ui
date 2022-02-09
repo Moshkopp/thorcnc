@@ -60,41 +60,6 @@ background:rgb(192, 191, 188);
    <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="ActionButton" name="btn_estop">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>102</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Estop</string>
-    </property>
-    <property name="checkable">
-     <bool>true</bool>
-    </property>
-    <property name="actionName" stdset="0">
-     <string>machine.estop.toggle</string>
-    </property>
-   </widget>
-   <widget class="ActionButton" name="btn_power">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>10</y>
-      <width>102</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Power</string>
-    </property>
-    <property name="actionName" stdset="0">
-     <string>machine.power.toggle</string>
-    </property>
-   </widget>
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
@@ -222,7 +187,7 @@ background:rgb(192, 191, 188);
      <enum>QTabWidget::East</enum>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <property name="elideMode">
      <enum>Qt::ElideNone</enum>
@@ -751,24 +716,75 @@ background:rgb(192, 191, 188);
      </attribute>
     </widget>
    </widget>
-   <widget class="ActionButton" name="btn_home_all">
+   <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>20</x>
       <y>10</y>
-      <width>181</width>
-      <height>21</height>
+      <width>461</width>
+      <height>31</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Home All</string>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
     </property>
-    <property name="rules" stdset="0">
-     <string>[{&quot;name&quot;: &quot;change Text&quot;, &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Homed' if ch[0] else 'Home All'&quot;, &quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}]}, {&quot;name&quot;: &quot;background&quot;, &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'background-color:rgb(138, 226, 52)' if ch[0]else ''&quot;, &quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}]}]</string>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
     </property>
-    <property name="actionName" stdset="0">
-     <string>machine.home.all</string>
-    </property>
+    <widget class="ActionButton" name="btn_home_all">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>0</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Home All</string>
+     </property>
+     <property name="rules" stdset="0">
+      <string>[{&quot;name&quot;: &quot;change Text&quot;, &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Homed' if ch[0] else 'Home All'&quot;, &quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}]}, {&quot;name&quot;: &quot;background&quot;, &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'background-color:rgb(138, 226, 52)' if ch[0]else ''&quot;, &quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}]}]</string>
+     </property>
+     <property name="actionName" stdset="0">
+      <string>machine.home.all</string>
+     </property>
+    </widget>
+    <widget class="ActionButton" name="btn_power">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>0</y>
+       <width>102</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Power</string>
+     </property>
+     <property name="actionName" stdset="0">
+      <string>machine.power.toggle</string>
+     </property>
+    </widget>
+    <widget class="ActionButton" name="btn_estop">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>102</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Estop</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="actionName" stdset="0">
+      <string>machine.estop.toggle</string>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
