@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+thorcnc/__init__.py
+thorcnc/__init__.py.bak
+thorcnc/config.yml
+thorcnc/config.yml.bak
+thorcnc/mainwindow.py
+thorcnc.egg-info/PKG-INFO
+thorcnc.egg-info/SOURCES.txt
+thorcnc.egg-info/dependency_links.txt
+thorcnc.egg-info/entry_points.txt
+thorcnc.egg-info/top_level.txt
+thorcnc/resources/resources.qrc
+thorcnc/ui/mainwindow.ui
+thorcnc/ui/style.qss

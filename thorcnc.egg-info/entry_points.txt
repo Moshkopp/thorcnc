@@ -1,0 +1,6 @@
+[gui_scripts]
+thorcnc = thorcnc:main
+
+[qtpyvcp.vcp]
+thorcnc = thorcnc
+
