@@ -187,7 +187,7 @@ background:rgb(192, 191, 188);
      <enum>QTabWidget::East</enum>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <property name="elideMode">
      <enum>Qt::ElideNone</enum>
@@ -199,10 +199,10 @@ background:rgb(192, 191, 188);
      <widget class="VTKBackPlot" name="vtk">
       <property name="geometry">
        <rect>
-        <x>-130</x>
-        <y>-200</y>
-        <width>951</width>
-        <height>851</height>
+        <x>0</x>
+        <y>10</y>
+        <width>821</width>
+        <height>651</height>
        </rect>
       </property>
       <property name="arcfeedColor" stdset="0">
