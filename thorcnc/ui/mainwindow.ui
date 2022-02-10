@@ -184,7 +184,7 @@ background:rgb(192, 191, 188);
      </sizepolicy>
     </property>
     <property name="tabPosition">
-     <enum>QTabWidget::East</enum>
+     <enum>QTabWidget::North</enum>
     </property>
     <property name="currentIndex">
      <number>0</number>
@@ -201,9 +201,21 @@ background:rgb(192, 191, 188);
        <rect>
         <x>0</x>
         <y>10</y>
-        <width>821</width>
-        <height>651</height>
+        <width>820</width>
+        <height>650</height>
        </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>820</width>
+        <height>650</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>820</width>
+        <height>650</height>
+       </size>
       </property>
       <property name="arcfeedColor" stdset="0">
        <color>
@@ -242,7 +254,7 @@ background:rgb(192, 191, 188);
         <x>1340</x>
         <y>10</y>
         <width>411</width>
-        <height>291</height>
+        <height>391</height>
        </rect>
       </property>
       <widget class="ActionButton" name="btn_jog_x_pos">
@@ -398,10 +410,10 @@ background:rgb(192, 191, 188);
       <widget class="MDIButton" name="mdi_zeroAll">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>260</y>
-         <width>381</width>
-         <height>31</height>
+         <x>10</x>
+         <y>120</y>
+         <width>71</width>
+         <height>181</height>
         </rect>
        </property>
        <property name="text">
@@ -409,6 +421,35 @@ background:rgb(192, 191, 188);
        </property>
        <property name="MDICommand" stdset="0">
         <string>G10 L20 P1 z0 x0 y0</string>
+       </property>
+      </widget>
+      <widget class="JogIncrementWidget" name="jogincrementwidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>340</y>
+         <width>411</width>
+         <height>41</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="ActionSlider" name="slide_manualspeed">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>300</y>
+         <width>411</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="sliderPosition">
+        <number>75</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="actionName" stdset="0">
+        <string>machine.jog.set-linear-speed</string>
        </property>
       </widget>
      </widget>
@@ -479,10 +520,10 @@ background:rgb(192, 191, 188);
      <widget class="MDIButton" name="mdi_GoToZero">
       <property name="geometry">
        <rect>
-        <x>1560</x>
-        <y>310</y>
-        <width>191</width>
-        <height>31</height>
+        <x>690</x>
+        <y>670</y>
+        <width>111</width>
+        <height>41</height>
        </rect>
       </property>
       <property name="minimumSize">
@@ -504,40 +545,11 @@ background:rgb(192, 191, 188);
        <string>G0 y0 x0 z0</string>
       </property>
      </widget>
-     <widget class="JogIncrementWidget" name="jogincrementwidget">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>730</y>
-        <width>431</width>
-        <height>41</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="ActionSlider" name="slide_manualspeed">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>790</y>
-        <width>431</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="sliderPosition">
-       <number>75</number>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="actionName" stdset="0">
-       <string>machine.jog.set-linear-speed</string>
-      </property>
-     </widget>
      <widget class="ActionButton" name="btn_manual">
       <property name="geometry">
        <rect>
         <x>1350</x>
-        <y>360</y>
+        <y>590</y>
         <width>201</width>
         <height>51</height>
        </rect>
@@ -563,7 +575,7 @@ background:rgb(192, 191, 188);
       <property name="geometry">
        <rect>
         <x>1560</x>
-        <y>360</y>
+        <y>590</y>
         <width>191</width>
         <height>51</height>
        </rect>
@@ -579,9 +591,9 @@ background:rgb(192, 191, 188);
       <property name="geometry">
        <rect>
         <x>1350</x>
-        <y>440</y>
+        <y>660</y>
         <width>411</width>
-        <height>251</height>
+        <height>181</height>
        </rect>
       </property>
       <property name="autoFillBackground">
@@ -590,8 +602,8 @@ background:rgb(192, 191, 188);
       <widget class="ActionButton" name="btn_spindle_off">
        <property name="geometry">
         <rect>
-         <x>310</x>
-         <y>200</y>
+         <x>110</x>
+         <y>120</y>
          <width>91</width>
          <height>41</height>
         </rect>
@@ -606,8 +618,8 @@ background:rgb(192, 191, 188);
       <widget class="StatusLabel" name="statuslabel_2">
        <property name="geometry">
         <rect>
-         <x>130</x>
-         <y>120</y>
+         <x>90</x>
+         <y>50</y>
          <width>251</width>
          <height>61</height>
         </rect>
@@ -624,9 +636,9 @@ background:rgb(192, 191, 188);
       <widget class="BarIndicator" name="barindicator">
        <property name="geometry">
         <rect>
-         <x>10</x>
-         <y>20</y>
-         <width>401</width>
+         <x>0</x>
+         <y>0</y>
+         <width>411</width>
          <height>41</height>
         </rect>
        </property>
@@ -635,7 +647,7 @@ background:rgb(192, 191, 188);
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>200</y>
+         <y>120</y>
          <width>91</width>
          <height>41</height>
         </rect>
@@ -650,8 +662,8 @@ background:rgb(192, 191, 188);
       <widget class="StatusLabel" name="statuslabel_3">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>130</y>
+         <x>10</x>
+         <y>60</y>
          <width>91</width>
          <height>41</height>
         </rect>
@@ -670,34 +682,9 @@ background:rgb(192, 191, 188);
       </widget>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_3">
-     <attribute name="title">
-      <string>Seite</string>
-     </attribute>
-     <widget class="ActiveGcodesTable" name="activegcodestable">
-      <property name="geometry">
-       <rect>
-        <x>880</x>
-        <y>40</y>
-        <width>256</width>
-        <height>921</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="NotificationWidget" name="notificationwidget">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>871</width>
-        <height>621</height>
-       </rect>
-      </property>
-     </widget>
-    </widget>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
-      <string>Seite</string>
+      <string>Files</string>
      </attribute>
      <widget class="FileSystemTable" name="filesystemtable">
       <property name="geometry">
@@ -712,8 +699,43 @@ background:rgb(192, 191, 188);
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
-      <string>Tab 2</string>
+      <string>Probe</string>
      </attribute>
+     <widget class="SubCaller" name="subcaller">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>631</width>
+        <height>881</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Log</string>
+     </attribute>
+     <widget class="ActiveGcodesTable" name="activegcodestable">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>30</y>
+        <width>891</width>
+        <height>941</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="NotificationWidget" name="notificationwidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>871</width>
+        <height>621</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
    </widget>
    <widget class="QFrame" name="frame">
@@ -822,6 +844,12 @@ background:rgb(192, 191, 188);
   </action>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>SubCaller</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.form_widgets.probe_widget.probe</header>
+   <container>1</container>
+  </customwidget>
   <customwidget>
    <class>ActionButton</class>
    <extends>QPushButton</extends>
