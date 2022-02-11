@@ -172,9 +172,9 @@ background:rgb(192, 191, 188);
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>50</y>
-      <width>1801</width>
-      <height>1011</height>
+      <y>80</y>
+      <width>1361</width>
+      <height>941</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -199,7 +199,7 @@ background:rgb(192, 191, 188);
      <widget class="VTKBackPlot" name="vtk">
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>10</x>
         <y>10</y>
         <width>820</width>
         <height>650</height>
@@ -247,211 +247,6 @@ background:rgb(192, 191, 188);
       <property name="readOnly" stdset="0">
        <bool>true</bool>
       </property>
-     </widget>
-     <widget class="VCPWidget" name="widget">
-      <property name="geometry">
-       <rect>
-        <x>1340</x>
-        <y>10</y>
-        <width>411</width>
-        <height>391</height>
-       </rect>
-      </property>
-      <widget class="ActionButton" name="btn_jog_x_pos">
-       <property name="geometry">
-        <rect>
-         <x>260</x>
-         <y>20</y>
-         <width>102</width>
-         <height>22</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>X+</string>
-       </property>
-       <property name="actionName" stdset="0">
-        <string>machine.jog.axis:x,pos</string>
-       </property>
-      </widget>
-      <widget class="ActionButton" name="btn_jog_X_neg">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>20</y>
-         <width>102</width>
-         <height>22</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>X-</string>
-       </property>
-       <property name="actionName" stdset="0">
-        <string>machine.jog.axis:x,neg</string>
-       </property>
-      </widget>
-      <widget class="ActionButton" name="btn_Y_jog_Y_neg">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>70</y>
-         <width>102</width>
-         <height>22</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Y-</string>
-       </property>
-       <property name="actionName" stdset="0">
-        <string>machine.jog.axis:y,neg</string>
-       </property>
-      </widget>
-      <widget class="ActionButton" name="actionbutton_5">
-       <property name="geometry">
-        <rect>
-         <x>260</x>
-         <y>70</y>
-         <width>102</width>
-         <height>22</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Y+</string>
-       </property>
-       <property name="actionName" stdset="0">
-        <string>machine.jog.axis:y,pos</string>
-       </property>
-      </widget>
-      <widget class="ActionButton" name="actionbutton_6">
-       <property name="geometry">
-        <rect>
-         <x>150</x>
-         <y>230</y>
-         <width>102</width>
-         <height>22</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Z-</string>
-       </property>
-       <property name="actionName" stdset="0">
-        <string>machine.jog.axis:z,neg</string>
-       </property>
-      </widget>
-      <widget class="ActionButton" name="actionbutton_7">
-       <property name="geometry">
-        <rect>
-         <x>150</x>
-         <y>130</y>
-         <width>102</width>
-         <height>22</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Z+</string>
-       </property>
-       <property name="actionName" stdset="0">
-        <string>machine.jog.axis:z,pos</string>
-       </property>
-      </widget>
-      <widget class="DROLabel" name="drolabel">
-       <property name="geometry">
-        <rect>
-         <x>140</x>
-         <y>10</y>
-         <width>101</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>15</pointsize>
-        </font>
-       </property>
-      </widget>
-      <widget class="DROLabel" name="drolabel_2">
-       <property name="geometry">
-        <rect>
-         <x>140</x>
-         <y>60</y>
-         <width>101</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>15</pointsize>
-        </font>
-       </property>
-       <property name="axisNumber" stdset="0">
-        <number>1</number>
-       </property>
-      </widget>
-      <widget class="DROLabel" name="drolabel_3">
-       <property name="geometry">
-        <rect>
-         <x>140</x>
-         <y>170</y>
-         <width>101</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>15</pointsize>
-        </font>
-       </property>
-       <property name="axisNumber" stdset="0">
-        <number>2</number>
-       </property>
-      </widget>
-      <widget class="MDIButton" name="mdi_zeroAll">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>120</y>
-         <width>71</width>
-         <height>181</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Zero All</string>
-       </property>
-       <property name="MDICommand" stdset="0">
-        <string>G10 L20 P1 z0 x0 y0</string>
-       </property>
-      </widget>
-      <widget class="JogIncrementWidget" name="jogincrementwidget">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>340</y>
-         <width>411</width>
-         <height>41</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="ActionSlider" name="slide_manualspeed">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>300</y>
-         <width>411</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="sliderPosition">
-        <number>75</number>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="actionName" stdset="0">
-        <string>machine.jog.set-linear-speed</string>
-       </property>
-      </widget>
      </widget>
      <widget class="ActionButton" name="btn_stop_prog">
       <property name="geometry">
@@ -545,22 +340,6 @@ background:rgb(192, 191, 188);
        <string>G0 y0 x0 z0</string>
       </property>
      </widget>
-     <widget class="ActionButton" name="btn_manual">
-      <property name="geometry">
-       <rect>
-        <x>1350</x>
-        <y>590</y>
-        <width>201</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>MAN</string>
-      </property>
-      <property name="actionName" stdset="0">
-       <string>machine.mode.manual</string>
-      </property>
-     </widget>
      <widget class="RecentFileComboBox" name="recentfilecombobox">
       <property name="geometry">
        <rect>
@@ -571,115 +350,18 @@ background:rgb(192, 191, 188);
        </rect>
       </property>
      </widget>
-     <widget class="ActionButton" name="btn_automatic">
+     <widget class="ActionDial" name="actiondial">
       <property name="geometry">
        <rect>
-        <x>1560</x>
-        <y>590</y>
-        <width>191</width>
-        <height>51</height>
+        <x>30</x>
+        <y>740</y>
+        <width>100</width>
+        <height>100</height>
        </rect>
-      </property>
-      <property name="text">
-       <string>AUTO</string>
       </property>
       <property name="actionName" stdset="0">
-       <string>machine.mode.auto</string>
+       <string>machine.feed-override.set</string>
       </property>
-     </widget>
-     <widget class="VCPWidget" name="widget_2">
-      <property name="geometry">
-       <rect>
-        <x>1350</x>
-        <y>660</y>
-        <width>411</width>
-        <height>181</height>
-       </rect>
-      </property>
-      <property name="autoFillBackground">
-       <bool>false</bool>
-      </property>
-      <widget class="ActionButton" name="btn_spindle_off">
-       <property name="geometry">
-        <rect>
-         <x>110</x>
-         <y>120</y>
-         <width>91</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Spindle Stop</string>
-       </property>
-       <property name="actionName" stdset="0">
-        <string>spindle.off</string>
-       </property>
-      </widget>
-      <widget class="StatusLabel" name="statuslabel_2">
-       <property name="geometry">
-        <rect>
-         <x>90</x>
-         <y>50</y>
-         <width>251</width>
-         <height>61</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="rules" stdset="0">
-        <string>[{&quot;name&quot;: &quot;speed&quot;, &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;\&quot;{:.0f}\&quot;.format(ch[0] * ch[1])&quot;, &quot;channels&quot;: [{&quot;url&quot;: &quot;status:spindle.0.override&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;status:spindle.0.speed&quot;, &quot;trigger&quot;: true}]}]</string>
-       </property>
-      </widget>
-      <widget class="BarIndicator" name="barindicator">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>411</width>
-         <height>41</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="ActionButton" name="btn_spindle_start">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>120</y>
-         <width>91</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Spindle Run</string>
-       </property>
-       <property name="actionName" stdset="0">
-        <string>spindle.forward</string>
-       </property>
-      </widget>
-      <widget class="StatusLabel" name="statuslabel_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>60</y>
-         <width>91</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>20</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-         <underline>true</underline>
-        </font>
-       </property>
-       <property name="text">
-        <string>RPM</string>
-       </property>
-      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_4">
@@ -697,6 +379,21 @@ background:rgb(192, 191, 188);
       </property>
      </widget>
     </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>Seite</string>
+     </attribute>
+     <widget class="ToolTable" name="tooltable">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>30</y>
+        <width>1241</width>
+        <height>411</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
       <string>Probe</string>
@@ -706,8 +403,8 @@ background:rgb(192, 191, 188);
        <rect>
         <x>20</x>
         <y>20</y>
-        <width>631</width>
-        <height>881</height>
+        <width>661</width>
+        <height>811</height>
        </rect>
       </property>
      </widget>
@@ -721,8 +418,8 @@ background:rgb(192, 191, 188);
        <rect>
         <x>880</x>
         <y>30</y>
-        <width>891</width>
-        <height>941</height>
+        <width>451</width>
+        <height>881</height>
        </rect>
       </property>
      </widget>
@@ -742,7 +439,7 @@ background:rgb(192, 191, 188);
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>10</y>
+      <y>20</y>
       <width>461</width>
       <height>31</height>
      </rect>
@@ -807,6 +504,337 @@ background:rgb(192, 191, 188);
       <string>machine.estop.toggle</string>
      </property>
     </widget>
+   </widget>
+   <widget class="VCPWidget" name="widget_2">
+    <property name="geometry">
+     <rect>
+      <x>1400</x>
+      <y>730</y>
+      <width>411</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <widget class="ActionButton" name="btn_spindle_off">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>120</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Spindle Stop</string>
+     </property>
+     <property name="actionName" stdset="0">
+      <string>spindle.off</string>
+     </property>
+    </widget>
+    <widget class="StatusLabel" name="statuslabel_2">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>50</y>
+       <width>251</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="rules" stdset="0">
+      <string>[{&quot;name&quot;: &quot;speed&quot;, &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;\&quot;{:.0f}\&quot;.format(ch[0] * ch[1])&quot;, &quot;channels&quot;: [{&quot;url&quot;: &quot;status:spindle.0.override&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;status:spindle.0.speed&quot;, &quot;trigger&quot;: true}]}]</string>
+     </property>
+    </widget>
+    <widget class="BarIndicator" name="barindicator">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>411</width>
+       <height>41</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="ActionButton" name="btn_spindle_start">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Spindle Run</string>
+     </property>
+     <property name="actionName" stdset="0">
+      <string>spindle.forward</string>
+     </property>
+    </widget>
+    <widget class="StatusLabel" name="statuslabel_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>true</underline>
+      </font>
+     </property>
+     <property name="text">
+      <string>RPM</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="VCPWidget" name="widget">
+    <property name="geometry">
+     <rect>
+      <x>1390</x>
+      <y>80</y>
+      <width>421</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <widget class="ActionButton" name="btn_jog_x_pos">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>20</y>
+       <width>102</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X+</string>
+     </property>
+     <property name="actionName" stdset="0">
+      <string>machine.jog.axis:x,pos</string>
+     </property>
+    </widget>
+    <widget class="ActionButton" name="btn_jog_X_neg">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>102</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X-</string>
+     </property>
+     <property name="actionName" stdset="0">
+      <string>machine.jog.axis:x,neg</string>
+     </property>
+    </widget>
+    <widget class="ActionButton" name="btn_Y_jog_Y_neg">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>102</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Y-</string>
+     </property>
+     <property name="actionName" stdset="0">
+      <string>machine.jog.axis:y,neg</string>
+     </property>
+    </widget>
+    <widget class="ActionButton" name="actionbutton_5">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>70</y>
+       <width>102</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Y+</string>
+     </property>
+     <property name="actionName" stdset="0">
+      <string>machine.jog.axis:y,pos</string>
+     </property>
+    </widget>
+    <widget class="ActionButton" name="actionbutton_6">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>230</y>
+       <width>102</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Z-</string>
+     </property>
+     <property name="actionName" stdset="0">
+      <string>machine.jog.axis:z,neg</string>
+     </property>
+    </widget>
+    <widget class="ActionButton" name="actionbutton_7">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>130</y>
+       <width>102</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Z+</string>
+     </property>
+     <property name="actionName" stdset="0">
+      <string>machine.jog.axis:z,pos</string>
+     </property>
+    </widget>
+    <widget class="DROLabel" name="drolabel">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>10</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>DejaVu Sans</family>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="DROLabel" name="drolabel_2">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>60</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>DejaVu Sans</family>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="axisNumber" stdset="0">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="DROLabel" name="drolabel_3">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>170</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>DejaVu Sans</family>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="axisNumber" stdset="0">
+      <number>2</number>
+     </property>
+    </widget>
+    <widget class="MDIButton" name="mdi_zeroAll">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>71</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Zero All</string>
+     </property>
+     <property name="MDICommand" stdset="0">
+      <string>G10 L20 P1 z0 x0 y0</string>
+     </property>
+    </widget>
+    <widget class="JogIncrementWidget" name="jogincrementwidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>340</y>
+       <width>411</width>
+       <height>41</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="ActionSlider" name="slide_manualspeed">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>300</y>
+       <width>411</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="sliderPosition">
+      <number>75</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="actionName" stdset="0">
+      <string>machine.jog.set-linear-speed</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="ActionButton" name="btn_automatic">
+    <property name="geometry">
+     <rect>
+      <x>1610</x>
+      <y>660</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>AUTO</string>
+    </property>
+    <property name="actionName" stdset="0">
+     <string>machine.mode.auto</string>
+    </property>
+   </widget>
+   <widget class="ActionButton" name="btn_manual">
+    <property name="geometry">
+     <rect>
+      <x>1400</x>
+      <y>660</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MAN</string>
+    </property>
+    <property name="actionName" stdset="0">
+     <string>machine.mode.manual</string>
+    </property>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
@@ -902,6 +930,11 @@ background:rgb(192, 191, 188);
    <header>qtpyvcp.widgets.input_widgets.recent_file_combobox</header>
   </customwidget>
   <customwidget>
+   <class>ToolTable</class>
+   <extends>QTableView</extends>
+   <header>qtpyvcp.widgets.input_widgets.tool_table</header>
+  </customwidget>
+  <customwidget>
    <class>JogIncrementWidget</class>
    <extends>QWidget</extends>
    <header>qtpyvcp.widgets.input_widgets.jog_increment</header>
@@ -915,6 +948,11 @@ background:rgb(192, 191, 188);
    <class>ActionSlider</class>
    <extends>QSlider</extends>
    <header>qtpyvcp.widgets.input_widgets.action_slider</header>
+  </customwidget>
+  <customwidget>
+   <class>ActionDial</class>
+   <extends>QDial</extends>
+   <header>qtpyvcp.widgets.input_widgets.action_dial</header>
   </customwidget>
   <customwidget>
    <class>VCPWidget</class>
